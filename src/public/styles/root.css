@@ -1,0 +1,30 @@
+header{
+    padding:.5rem 0;
+    font-weight:bold;
+}
+header #oxab a{
+    text-decoration:none;
+    color:var(--main-color);
+}
+@media screen and (min-width: 720px) {
+    header #oxab a{
+        font-size:x-large;
+    }
+}
+
+.hspace{padding:.5rem 0;}
+
+a{
+    color:#111;
+}
+h1{
+    padding:.5rem 0;
+    font-size:large;
+    font-weight:bold;
+}
+
+.nevise-box{
+    display:flex;
+    align-items:center;
+    gap:1rem;
+}

@@ -1,0 +1,41 @@
+*,
+*::after,
+*::before {
+  box-sizing:   border-box;
+  margin:       0;
+  padding:      0;
+  font:         inherit;
+}
+*{
+  padding:0;
+  margin:0;
+  border: 0;
+  box-sizing:border-box;
+	font-size: 100%;
+	font: inherit;
+  vertical-align:baseline;
+}
+
+@font-face {
+  font-family: 'Vazirmatn';
+  src: url('/public/fonts/Vazirmatn[wght].woff2') format('woff2 supports variations'),
+  url('/public/fonts/Vazirmatn[wght].woff2') format('woff2-variations');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+body{font-family:Vazirmatn,sans-serif;color:#111111;}
+
+.box{width:calc(100dvw - 1rem);margin:auto;}
+@media screen and (min-width: 1080px) {
+  .box{width:calc(1080px - 2rem);}
+}
+
+.rtl{direction:rtl !important;}
+.ltr{direction:ltr !important;}
+
+:root{
+  --main-color:#339989;
+  --c1:#FFFFFF;--c2:#111111;--c4:#7c68b3;--c5:#f9a39f;
+}
