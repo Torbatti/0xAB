@@ -1,0 +1,12 @@
+section.footnotes{font-size:small;}
+#footnote-label{font-size:medium;margin-top:1rem;}
+
+.nevise-box{
+    display:grid;
+}
+.nevise-title{
+    font-weight:bold;
+}
+.khane-peyvand,.nevise-pubDate,.nevise-az-arya{
+    font-size:medium;
+}

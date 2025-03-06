@@ -1,0 +1,52 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+import { getCollection, render } from 'astro:content';
+// 1. Generate a new path for every collection entry
+export async function getStaticPaths() {
+  const neviseha = await getCollection('nvs');
+  return neviseha.map(nevise => ({
+    params: { id: nevise.id },
+    props: { nevise },
+  }));
+}
+// 2. For your template, you can get the entry directly from the prop
+const { nevise } = Astro.props;
+const { Content } = await render(nevise);
+---
+<Layout title={nevise.data.title} description={nevise.data.description}>
+  <link rel='stylesheet' type='text/css' media='screen' href='/styles/nevise.css' slot="header-extend">
+
+  <div class="box rtl">
+    <p class="khane-peyvand">یاخالق | <a href="/">خانه</a></p>
+  </div>
+
+  <div class="box rtl">
+
+    <div class="nevise-box">
+      <p class="nevise-title"><a href={"/nvs/"+nevise.id}>
+        {nevise.data.title}</a></p>
+        <p class="nevise-az-arya">نویسه ای از آریا بختیاری</p>
+      <p class="nevise-pubDate">
+        {nevise.data.pubDate}
+        {nevise.data.updatedDate != "" ? " - " + nevise.data.updatedDate : ""}
+      </p>
+    </div>
+
+  </div>
+
+  <div class="box rtl">
+    <Content />
+  </div>
+
+  <script type="module">
+    document.querySelector("#footnote-label").innerHTML = "پانویسه ها";
+  </script>
+
+</Layout>
+
+<style>
+  
+
+  
+</style>

@@ -1,0 +1,22 @@
+#towerofbabel img{
+    width:334px;
+    height:240px;
+
+    object-fit:cover;
+    margin: auto;
+}
+@media screen and (min-width: 720px) {
+    #towerofbabel img{
+        width:480px;
+        height:340px;
+    }
+}
+#towerofbabel-text{
+    margin:1rem auto;
+}
+
+.dst-sari{font-size:medium;}
+.dst-sari a{padding:.25rem;}
+
+.ba-eshg{font-size:medium;}
+.ba-eshg a{padding:.25rem;}

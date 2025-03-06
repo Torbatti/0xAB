@@ -1,21 +1,6 @@
-header{
-    padding:.5rem 0;
-    font-weight:bold;
-}
-header #oxab a{
-    text-decoration:none;
-    color:var(--main-color);
-}
-@media screen and (min-width: 720px) {
-    header #oxab a{
-        font-size:x-large;
-    }
-}
-
-.hspace{padding:.5rem 0;}
-
 a{
-    color:#111;
+    color:var(--text);
+    text-underline-offset:.44rem;
 }
 h1{
     padding:.5rem 0;
@@ -29,9 +14,8 @@ h2{
 code{
     direction:ltr;
 }
-
-.nevise-box{
+ol{
     display:flex;
-    align-items:center;
-    gap:1rem;
+    flex-direction:column;
+    padding:0 1.25rem;
 }
