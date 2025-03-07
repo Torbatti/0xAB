@@ -44,20 +44,24 @@ updatedDate: "14031218"
 
 
 
-[^100] The 3-2-1 Backup Strategy
-
-
-
-
-
-
+# بازگویی داده در سطح سخت افزاری
 Hardware -> Raid
 
+# بازگویی داده در سطح فایل سیستم
 FS -> ZFS
 
+# بازگویی داده در سطح نرم افزاری
 BackUp
 
+[^100] The 3-2-1 Backup Strategy
+
+# بازگویی داده در سطح پروتوکل ارتباطی
 Software -> Viewstamped Replication
+
+
+
+
+
 
 
 
