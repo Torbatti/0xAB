@@ -22,6 +22,7 @@ const nvs = defineCollection({
     description: z.string(),
     pubDate: z.string(),
     updatedDate: z.string(),
+    version: z.string(),
   })
 });
 

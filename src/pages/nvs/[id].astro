@@ -20,18 +20,24 @@ const { Content } = await render(nevise);
 
   <div class="box rtl">
     <p class="khane-peyvand">یاخالق | <a href="/">خانه</a></p>
+    <p class="nevise-az-arya">نویسه ای از آریا بختیاری</p>
   </div>
 
   <div class="box rtl">
 
     <div class="nevise-box">
       <p class="nevise-title"><a href={"/nvs/"+nevise.id}>{nevise.data.title}</a></p>
-      <p class="nevise-az-arya">نویسه ای از آریا بختیاری</p>
+      <!-- <p class="nevise-az-arya"></p> -->
       <p class="nevise-pubDate">
         {nevise.data.pubDate}
         {nevise.data.updatedDate != "" ? " - " + nevise.data.updatedDate : ""}
       </p>
-      <p id="zaman-khandan-text"><span id="zaman-khandan"></span> دقیقه</p>
+      <p id="nevise-noskhe">
+        {nevise.data.version != "" ? " نسخه ی " + nevise.data.version : ""}
+      </p>
+      <p id="nevise-zaman"><span id="zaman-khandan"></span> دقیقه</p>
+      
+
     </div>
 
   </div>
@@ -41,14 +47,17 @@ const { Content } = await render(nevise);
   </div>
 
   <script type="module">
-    document.querySelector("#footnote-label").innerHTML = "پانویسه ها";
+    const footnote = document.querySelector("#footnote-label");
+    if (footnote != null){
+      footnote.innerHTML = "پانویسه ها";
+    }
 
     function readingTime() {
       const text = document.getElementById("content").innerText;
       const wpm = 225;
       const words = text.trim().split(/\s+/).length;
       const time = Math.ceil(words / wpm);
-      document.getElementById("zaman-khandan").innerText = time;
+      document.getElementById("zaman-khandan").innerText = time <= 10 ? "کمتر از 10" :time.toString();
     }
     readingTime();
   </script>

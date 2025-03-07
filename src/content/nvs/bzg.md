@@ -1,8 +1,9 @@
 ---
-title: "بازگویی | Replication"
-description: ""
+title: "بازگویی داده | Data Replication"
+description: "نویسه ای درباره ی مشکلات موجود و راه حل های بوجود آمده برای حل آن ها در بازگویی داده های سامانه های اطلاعاتی."
 pubDate: "14031217"
 updatedDate: "14031218"
+version: "آزمایشی"
 ---
 <style>
     .custom-bazgooii-ssd{
@@ -56,9 +57,9 @@ BackUp
 [^100] The 3-2-1 Backup Strategy
 
 # بازگویی داده در سطح پروتوکل ارتباطی
-Software -> Viewstamped Replication
 
-
+[^101] Viewstamped Replication: A New Primary Copy Method to Support Highly-Available Distributed Systems
+[^102] Viewstamped Replication Revisited
 
 
 
@@ -76,3 +77,5 @@ Software -> Viewstamped Replication
 
 [^1]: https://www.usenix.org/system/files/fast20-maneas.pdf
 [^100]: https://www.backblaze.com/blog/the-3-2-1-backup-strategy/
+[^101]: https://pmg.csail.mit.edu/papers/vr.pdf
+[^102]: https://pmg.csail.mit.edu/papers/vr-revisited.pdf
