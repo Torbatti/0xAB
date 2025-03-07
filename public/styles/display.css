@@ -1,0 +1,54 @@
+/* Display */
+.flex{display:flex;}
+.grid{display:grid;}
+.block{display:block;}
+.none{display:none;}
+
+/* Flex Direction */
+.flex-row     {flex-direction:row;}
+.flex-row-rev {flex-direction:row-reverse;}
+.flex-col     {flex-direction:column;}
+.flex-col-rev {flex-direction:column-reverse;}
+/* Flex Wrap */
+.flex-wrap      {flex-wrap:wrap;}
+.flex-wrap-rev  {flex-wrap:wrap-reverse;}
+.flex-nowrap    {flex-wrap:nowrap;}
+
+/* Justify Content */
+.jcontent-start   {justify-content:flex-start;}
+.jcontent-end     {justify-content:flex-end;}
+.jcontent-center  {justify-content:center;}
+.jcontent-between {justify-content:space-between;}
+.jcontent-around  {justify-content:space-around;}
+.jcontent-evenly  {justify-content:space-evenly;}
+/* Justify Items */
+.jitems-start   {justify-items:start;}
+.jitems-end     {justify-items:end;}
+.jitems-center  {justify-items:center;}
+.jitems-stretch {justify-items:stretch;}
+/* Justify Self */
+.jself-auto     {justify-self:auto;}
+.jself-start    {justify-self:start;}
+.jself-end      {justify-self:end;}
+.jself-center   {justify-self:center;}
+.jself-stretch  {justify-self:stretch;}
+
+/* Align Items */
+.aitems-start     {align-items:flex-start;}
+.aitems-end       {align-items:flex-end;}
+.aitems-center    {align-items:center;}
+.aitems-baseline  {align-items:baseline;}
+.aitems-stretch   {align-items:stretch;}
+/* Align Content */
+.acontent-baseline  {align-content:baseline;}
+.acontent-start     {align-content:flex-start;}
+.acontent-end       {align-content:flex-end;}
+.acontent-center    {align-content:center;}
+.acontent-between   {align-content:space-between;}
+.acontent-around    {align-content:space-around;}
+.acontent-evenly    {align-content:space-evenly;}
+
+/* Gap */
+.low-gap  {gap:0.5rem;}
+.mid-gap  {gap:1rem;}
+.high-gap {gap:2rem;}
