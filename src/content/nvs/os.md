@@ -1,7 +1,7 @@
 ---
-title: "سوال و جواب"
+title: "سامانه های عامل | Operating Systems"
 description: ""
-pubDate: "14031218"
+pubDate: "14031217"
 updatedDate: ""
 version: "آزمایشی"
 ---

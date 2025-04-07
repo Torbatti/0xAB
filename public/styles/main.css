@@ -46,7 +46,10 @@ body{background:var(--background);color:var(--text);font-size:large;}
 :root{
   --background: #f0f0f0;
   --text: #111111;
-  --primary:#339989;
+  --primary:#45c0ad;
+  --secondary:#cbcab1;
+  --accent:#a5b18b;
+
   --c1:#FFFFFF;--c2:#111111;--c4:#7c68b3;--c5:#f9a39f;
 }
 
