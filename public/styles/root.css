@@ -1,16 +1,20 @@
+a{font-size:1rem;}
+p{font-size:1rem;}
+h1{font-size:large;font-weight:bold;}
+
 a{
-    color:var(--text);
-    text-underline-offset:.44rem;
+  color:var(--text);
+  text-decoration:underline;
+  text-underline-offset:.44rem;
+}
+
+p{
+  padding:.33rem 0;
 }
 h1{
     padding:.5rem 0;
-    font-size:large;
-    font-weight:bold;
 }
-h2{
-    padding:.25rem 0;
-    font-weight:bold;
-}
+
 code{
     direction:ltr;
 }

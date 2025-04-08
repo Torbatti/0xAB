@@ -20,14 +20,15 @@ const { Content } = await render(nevise);
 
   <div class="box rtl">
     <p class="khane-peyvand">یاخالق | <a href="/">خانه</a></p>
-    <p class="nevise-az-arya">نویسه ای از آریا بختیاری</p>
   </div>
 
   <div class="box rtl">
 
     <div class="nevise-box">
-      <p class="nevise-title"><a href={"/nvs/"+nevise.id}>{nevise.data.title}</a></p>
-      <!-- <p class="nevise-az-arya"></p> -->
+      
+      <h1 class="nevise-title"><a href={"/nvs/"+nevise.id}>{nevise.data.title}</a></h1>
+
+      <p class="nevise-az-arya">نویسه ای از آریا بختیاری</p>
       <p class="nevise-pubDate">
         {nevise.data.pubDate}
         {nevise.data.updatedDate != "" ? " - " + nevise.data.updatedDate : ""}

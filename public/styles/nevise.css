@@ -3,16 +3,18 @@ section.footnotes{font-size:small;}
 
 .nevise-box{
     display:grid;
+    justify-content:center;
+    text-align: center;
 }
-.nevise-title{
-    font-weight:bold;
-}
+.nevise-box p{padding:.125rem 0;}
+h1.nevise-title a{font-size:x-large;}
+
 .khane-peyvand,.nevise-pubDate,.nevise-az-arya{
     font-size:medium;
 }
 
-#nevise-zaman,#nevise-noskhe{
+/* #nevise-zaman,#nevise-noskhe{
     font-size:small; 
-}
+} */
 
 #content ul{padding-right:1rem;}
