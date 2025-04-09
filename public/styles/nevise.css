@@ -8,6 +8,7 @@ section.footnotes{font-size:small;}
 }
 .nevise-box p{padding:.125rem 0;}
 h1.nevise-title a{font-size:x-large;}
+h1.nevise-title{padding:.25rem 0;}
 
 .khane-peyvand,.nevise-pubDate,.nevise-az-arya{
     font-size:medium;

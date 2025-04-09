@@ -1,6 +1,8 @@
 a{font-size:1rem;}
 p{font-size:1rem;}
-h1{font-size:large;font-weight:bold;}
+ul{font-size:1rem;}
+h1{font-size:1.25rem;font-weight:bold;}
+h2{font-size:medium;font-weight:bolder;}
 
 a{
   color:var(--text);
@@ -12,7 +14,10 @@ p{
   padding:.33rem 0;
 }
 h1{
-    padding:.5rem 0;
+  padding:1rem 0;
+}
+h2{
+  padding:.25rem 0;
 }
 
 code{
