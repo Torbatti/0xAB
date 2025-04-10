@@ -1,0 +1,40 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+
+import { Image } from 'astro:assets';
+import towerOfBableImage from "../../assets/imgs/tower_of_babel.jpg"
+---
+<Layout>
+    <link rel='stylesheet' type='text/css' media='screen' href='/styles/index.css' slot="header-extend">
+    
+    <div class="box"></div>
+
+    <div id="towerofbabel">
+        <Image src={towerOfBableImage} alt="">
+    </div>
+    <div id="towerofbabel-text" class="box ltr">
+        <p>
+            They used to say: "You can reach the sky".
+        </p>
+        <p>
+            He dreamed of something beyond that.They called him crazy.
+            Maybe he was one. Atleast he knew he could not reach the sky alone.
+            He started spreading rumors about a sky full of gold. 
+            People started constructing a tower. They called him King.
+        </p>
+        <p>He didn't look to the sky no more because he got it on him. </p>
+    </div>
+
+    <div class="box index-box ltr">
+        <p>
+            From Arya Bakh |
+        </p>
+        
+        <a href="mailto:arya.bakh@0xab.ir" target="_blank" rel="noopener noreferrer">Email</a>
+        <a href="http://github.com/torbatti" target="_blank" rel="noopener noreferrer">Github</a>
+	</div>
+
+    <div class="box ltr"><a href="/en/">English</a></div>
+
+</Layout>

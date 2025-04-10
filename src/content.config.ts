@@ -6,7 +6,7 @@ const nvs = defineCollection({
   schema: z.object({
     isDraft: z.boolean().default(false),
     title: z.string(),
-    author: z.string().default('آریا بختیاری | Arya Bakhtiari'),
+    author: z.string().default('آریا بختیاری'),
     description: z.string(),
     pubDate: z.string(),
     updatedDate: z.string(),
