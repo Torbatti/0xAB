@@ -14,4 +14,17 @@ const nvs = defineCollection({
   })
 });
 
-export const collections = { nvs };
+const nvs_en = defineCollection({
+  loader: glob({ pattern: "*.md", base: "./src/content/nvs_en" }),
+  schema: z.object({
+    isDraft: z.boolean().default(false),
+    title: z.string(),
+    author: z.string().default('Arya Bakh'),
+    description: z.string(),
+    pubDate: z.string(),
+    updatedDate: z.string(),
+    version: z.string(),
+  })
+});
+
+export const collections = { nvs ,nvs_en };
