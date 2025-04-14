@@ -80,19 +80,23 @@ version: "آزمایشی"
 [^3]
 بنا شده که پایه و اساس بسیاری تفاهم های دیگر است.
 
+- [تَفما](https://en.wikipedia.org/wiki/Transmission_Control_Protocol)
 
 
 # تَفدَنگ (تفاهم داده نگار کاربر) | یو دی پی چیست
+- [تَفدَنگ](https://en.wikipedia.org/wiki/User_Datagram_Protocol)
 
 # تفاوت تَفما و تَفدَنگ | تی سی پی و یو دی پی
 
-# تَفما و تَفتَک (تفاهم تارکده) | تی سی پی و آی پی 
+# تَفتَک (تفاهم تارکده) | آی پی 
+- [تَفتَک نسخه ۴](https://en.wikipedia.org/wiki/IPv4)
+- [تفتک نسخه ۶](https://en.wikipedia.org/wiki/IPv6)
 
-# هدر تفتک
+# سرآیند تفتک | هدر آیپی
+- [سرآیند تفتک](https://en.wikipedia.org/wiki/IPv4#Header)
 
-# هدر تَفما
-
-
+# سرآیند تَفما | هدر تی سی پی
+- [سرآیند تَفما](https://en.wikipedia.org/wiki/Transmission_Control_Protocol#cite_ref-FOOTNOTERFC_92933.1._Header_Format_17-1)
 
 
 
@@ -317,7 +321,7 @@ cc server.c -o server
 - CompTIA Network+ All in one 8th edition book
 - [tcpserver.c - A simple TCP echo server](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f99/www/class26/tcpserver.c)
 - [How to Build a Simple TCP Server in C](https://devtails.xyz/@adam/how-to-build-a-simple-tcp-server-in-c)
-
+- [Introduction to Sockets Programming in C using TCP/IP](https://www.csd.uoc.gr/~hy556/material/tutorials/cs556-3rd-tutorial.pdf)
 
 # RFC های مرتبط
 - [TCP 9293](https://datatracker.ietf.org/doc/html/rfc9293)
