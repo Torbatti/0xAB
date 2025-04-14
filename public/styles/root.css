@@ -24,8 +24,12 @@ h2{
 
 ul{padding-right:1rem;}
 
-code{
-    direction:ltr;
+.astro-code{
+  font-size:1rem;
+  padding:.75rem 1rem;
+  direction:ltr !important;
+  margin:1rem auto;
+  border-radius:.5rem;
 }
 ol{
   display:flex;
