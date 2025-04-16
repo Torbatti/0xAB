@@ -227,7 +227,37 @@ version: "آزمایشی"
   </tr>
 </table> 
 
+```python
+# server.py
+import socket
 
+sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+sock.bind(('127.0.0.1', 12345))
+sock.listen(128)
+
+while True:
+    connection , address = sock.accept()
+    buf = connection.recv(1024)
+    connection.send(buf)
+    connection.close()
+
+sock.close()
+```
+
+```python
+# client.py
+import socket
+
+sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+sock.connect(('127.0.0.1', 12345))
+
+send_buf = "hello server! from client."
+connection.send(send_buf)
+recv_buf = connection.recv(1024)
+
+sock.close()
+```
 
 ```c
 // server.c
