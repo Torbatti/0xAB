@@ -1,70 +1,56 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 
-import { Image } from 'astro:assets';
-import towerOfBableImage from "../assets/imgs/tower_of_babel.jpg"
+import { Image } from "astro:assets";
+import towerOfBableImage from "../assets/imgs/tower_of_babel.jpg";
 ---
+
 <Layout>
-    <link rel='stylesheet' type='text/css' media='screen' href='/styles/index.css' slot="header-extend">
+    <link
+        rel="stylesheet"
+        type="text/css"
+        media="screen"
+        href="/styles/index.css"
+        slot="header-extend"
+    />
 
     <div class="box"></div>
-    
+
     <div id="towerofbabel">
-        <Image src={towerOfBableImage} alt="">
-	</div>
-    <div id="towerofbabel-text" class="box rtl">
-        <p>
-            گفته شده بود :
-            "
-                آرزوی ناممکن آسمان آسان شود
-            ".
-        </p>
-        <p>
-            همه شهر او را به دیوانه میشناختند.
-            می دانست قبل از مرگش به آنجا نخواهد رسید.
-            سنگان را با نگاهی به سوی آسمان روی یکدیگر می چید.
-            روزگاری گذشت و دیگر تنها و دیوانه نبود.
-            گرد هم آمدند تا به آنجا بروند , آسمان.
-            شهر از بالای برج بسیار کوچک بود.
-            بعد از مرگ استاد برج دیگر بالا نرفت , تا مجبور به فرو ریختن شد.
-        </p>
-        <p>
-            دیگر کسی از آسمان اسمی نبرد.
-        </p>
-	</div>
-
+        <Image src={towerOfBableImage} alt="" />
+        <div id="towerofbabel-text" class="box rtl">
+            <p>گفته شده بود : " آرزوی ناممکن آسمان آسان شود ".</p>
+            <p>
+                همه شهر او را به دیوانه میشناختند. می دانست قبل از مرگش به آنجا
+                نخواهد رسید. سنگان را با نگاهی به سوی آسمان روی یکدیگر می چید.
+                روزگاری گذشت و دیگر تنها و دیوانه نبود. گرد هم آمدند تا به آنجا
+                بروند , آسمان. شهر از بالای برج بسیار کوچک بود. بعد از مرگ استاد
+                برج دیگر بالا نرفت , تا مجبور به فرو ریختن شد.
+            </p>
+            <p>دیگر کسی از آسمان اسمی نبرد.</p>
+        </div>
+    </div>
 
     <div class="box index-box rtl">
-        <p>
-            با عشق و علاقه از آریا بختیاری | 
-        </p>
-        
-        <a href="mailto:arya.bakh@0xab.ir" target="_blank" rel="noopener noreferrer">ایمیل</a>
-        <a href="http://github.com/torbatti" target="_blank" rel="noopener noreferrer">گیت هاب</a>
-	</div>
+        <p>پیمایش |</p>
 
-    <div class="box index-box rtl">
-        <p>
-            دسترسی سریع | 
-        </p>
-
-        <!-- <a href="#nvs">نویسگان</a> -->
-        <!-- <a href="/nvs/net">شبکه</a> -->
-        <a href="/nvs/bzg">بازگویی</a>
+        <a href="/n/os"> سیستم عامل‌ </a>
+        <a href="/n/net"> شبکه </a>
+        <a href="/n/emu"> شبیه سازی </a>
+        <a href="/n/re"> مهندسی معکوس </a>
         <!-- <a href="/nvs/megs">مقیاس پذیری</a> -->
         <!-- <a href="/nvs/tozi">توضیع پذیری</a> -->
-	</div>
+    </div>
 
     <div class="box index-box rtl">
-        <p>
-            زبان برنامه نویسی | 
-        </p>
+        <p>زبان برنامه نویسی |</p>
 
-        <a href="/nvs/go">گو</a>
-        <!-- <a href="/nvs/bzg">زیگ</a> -->
-        <!-- <a href="/nvs/bzg">راست</a> -->
-	</div>
-<!-- 
+        <a href="/n/go">گو</a>
+        <a href="/n/zig">زیگ</a>
+        <a href="/n/rust">راست</a>
+        <a href="/n/c">سی</a>
+    </div>
+    <!-- 
     <div class="box rtl">
         <p>یکی از مشکلاتی که برنامه نویسان و طراحان برنامه در تمامی سطوح به آن برخورد میکنند از بین رفتن اطلاعات و داده های برنامه هایشان است.</p>
         <p>
@@ -131,14 +117,27 @@ import towerOfBableImage from "../assets/imgs/tower_of_babel.jpg"
         <a href="http://github.com/torbatti/" target="_blank" rel="noopener noreferrer">UUID RFC9562</a>
 	</div> -->
 
-
+    <!-- 
     <div class="box rtl">
         <p id="nvs">نویسگان</p>
-        <!-- <p> 1404-01-24 | <a href="/nvs/tcp"> بی‌نهایت و فراتر از تی سی پی </a></p> -->
-        <p> 1404-01-20 | <a href="/nvs/hbw">نوشتگاه ولی چطور</a></p>
+    </div> -->
+    <!-- <p> 1404-01-24 | <a href="/nvs/tcp"> بی‌نهایت و فراتر از تی سی پی </a></p> -->
+    <!-- <p> 1404-01-20 | <a href="/nvs/hbw">نوشتگاه ولی چطور</a></p> -->
+
+    <div class="box index-box rtl">
+        <p>با عشق و علاقه از آریا بختیاری |</p>
+
+        <a
+            href="mailto:arya.bakh@0xab.ir"
+            target="_blank"
+            rel="noopener noreferrer">ایمیل</a
+        >
+        <a
+            href="http://github.com/torbatti"
+            target="_blank"
+            rel="noopener noreferrer">گیت هاب</a
+        >
     </div>
-    
 
     <div class="box rtl"><a href="/en/">English</a></div>
-
 </Layout>
